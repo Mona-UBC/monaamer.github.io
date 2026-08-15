@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mona [Last Name] | Mechanical Engineer & Educator</title>
+    <style>
+        :root {
+            --bg-color: #f5f5f7; /* Light Grey Background */
+            --text-color: #333333;
+            --accent-purple: #6b46c1; /* Deep Purple Accent */
+            --accent-light: #e9d8fd; /* Very Light Purple for tags */
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+            --font-main: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: var(--font-main);
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 40px;
+            border-bottom: 2px solid var(--accent-purple);
+            padding-bottom: 20px;
+        }
+
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--accent-purple);
+        }
+
+        .header-text h1 {
+            margin: 0;
+            font-size: 2rem;
+            color: var(--accent-purple);
+        }
+
+        .header-text p {
+            margin: 5px 0 0 0;
+            color: #666;
+            font-style: italic;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-color);
+            margin-right: 15px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: var(--accent-purple);
+        }
+
+        section {
+            background-color: var(--card-bg);
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            color: var(--accent-purple);
+            font-size: 1.5rem;
+            margin-top: 0;
+            border-left: 4px solid var(--accent-purple);
+            padding-left: 10px;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .tag {
+            background-color: var(--accent-light);
+            color: var(--accent-purple);
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        ul.publications {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul.publications li {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        ul.publications li:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .pub-title {
+            font-weight: bold;
+            color: var(--text-color);
+        }
+
+        .pub-meta {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 4px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    
+    <header>
+        <!-- Replace src with your actual photo path -->
+        <img src="https://via.placeholder.com/100?text=MN" alt="Profile Photo" class="avatar">
+        <div class="header-text">
+            <h1>Mona [Last Name]</h1>
+            <p>Mechanical Engineer & Educator | Certified Organizational Coach</p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a mechanical engineer specializing in wind energy and structural dynamics, with a strong focus on pedagogical innovation and ethical engineering education. I combine technical rigor with coaching-based inquiry to foster critical thinking and socio-technical competencies in students.</p>
+        <p>Currently seeking lecturer opportunities in Canada. My work bridges the gap between advanced mechanical systems and the human elements of engineering practice, ensuring that future engineers are not only technically proficient but also ethically grounded.</p>
+        
+        <div class="tags">
+            <span class="tag">Wind Energy</span>
+            <span class="tag">Structural Dynamics</span>
+            <span class="tag">Engineering Ethics</span>
+            <span class="tag">Pedagogy</span>
+            <span class="tag">Organizational Coaching</span>
+        </div>
+    </section>
+
+    <section id="research">
+        <h2>Research Interests</h2>
+        <ul>
+            <li><strong>Wind Energy & Structural Dynamics:</strong> Aeroelastic instability, fatigue life prediction, and vibration control in renewable energy systems.</li>
+            <li><strong>Socio-Technical Engineering Education:</strong> Integrating ethical reasoning, sustainability, and societal impact into core technical curricula.</li>
+            <li><strong>Humanitarian Engineering:</strong> Applying engineering solutions to community-scale challenges with a focus on equity and local empowerment.</li>
+        </ul>
+    </section>
+
+    <section id="teaching">
+        <h2>Teaching Philosophy</h2>
+        <p>My teaching approach centers on active learning, mutual trust, and psychological safety. I leverage my background as a certified organizational coach to facilitate inquiry-based learning, using open-ended questioning to spark intrinsic motivation and curiosity.</p>
+        <p>I believe effective learning is built on transparency and responsiveness. By implementing real-time feedback loops and accessible course materials, I strive to create an inclusive environment where all students feel empowered to engage deeply with complex engineering concepts.</p>
+        <p><em>[Link to full Teaching Statement PDF]</em></p>
+    </section>
+
+    <section id="publications">
+        <h2>Selected Publications</h2>
+        <ul class="publications">
+            <li>
+                <div class="pub-title">[Title of Your Most Recent Paper]</div>
+                <div class="pub-meta">M. [Last Name], et al. (2024). <em>Journal Name</em>, Vol(Issue), pp. XX-XX.</div>
+            </li>
+            <li>
+                <div class="pub-title">[Title of Another Significant Paper]</div>
+                <div class="pub-meta">M. [Last Name] & Co-Author. (2023). <em>Conference Proceedings</em>.</div>
+            </li>
+             <li>
+                <div class="pub-title">[Title of Early Career Work]</div>
+                <div class="pub-meta">M. [Last Name]. (2022). <em>Journal Name</em>.</div>
+            </li>
+        </ul>
+    </section>
+
+    <section id="service">
+        <h2>Service & Outreach</h2>
+        <ul>
+            <li><strong>Geering Up Program:</strong> Volunteer instructor supporting high school outreach initiatives to inspire young students in STEM.</li>
+            <li><strong>Supervision:</strong> Supervised 20+ undergraduate and master's theses during PhD studies; currently guiding Work Integrated Learning (WIL) students at UBC.</li>
+        </ul>
+    </section>
+
+    <footer id="contact">
+        <p>Email: mona@example.com | LinkedIn: linkedin.com/in/mona-lastname | ORCID: 0000-0000-0000-0000</p>
+        <p>&copy; 2026 Mona [Last Name]. All rights reserved.</p>
+    </footer>
+
+</div>
+
+</body>
+</html>
+
+- **LinkedIn:** [linkedin.com/in/mona-lastname](https://www.linkedin.com/in/mona-lastname)
+- **ORCID:** [0000-0000-0000-0000](https://orcid.org/)
